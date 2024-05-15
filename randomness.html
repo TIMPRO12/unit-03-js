@@ -8,41 +8,45 @@
 <style>
     .box1 {
         color: red;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
     }
     .box2 {
         color: blue;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
     .box3 {
         color: green;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 </style>
 </head>
 <body>
     <div class="box1">
-        text hello
+        this is for simple
     </div>
     <div class="box2">
-        
+        this is for oldtimey
     </div>
     <div class="box3">
-        
+        this is for crazy
     </div> 
     <button onclick="simple('blue')">simple</button>
     <button onclick="oldtimey('red')">oldtimey</button>
     <button onclick="crazy('green')">crazy</button>
     <script>
         function simple(color){
+            
             document.querySelector('.box1').style.color = color;
             document.body.style.backgroundColor = "red"
             document.body.style.fontFamily = "Roboto"
         }
         function oldtimey(color){
-            document.querySelector('.box1').style.color = color;
+            document.querySelector('.box2').style.color = color;
             document.body.style.backgroundColor = "brown"
-            document.body.style.fontFamily = "Oswald"
+            document.body.style.fontFamily = "MonoLisa"
         }
         function crazy(color){
-            document.querySelector('.box1').style.color = color;
+            document.querySelector('.box3').style.color = color;
             document.body.style.backgroundColor = "black"
             document.body.style.fontFamily = "Oswald"
         }
