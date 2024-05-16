@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mad-Libs</title>
+</head>
+<body>
+    <br>
+    <br>
+    <label for="nameInput">Give me a name:</label>
+    <input type="text" id="nameInput">
+    <br>
+    <br>
+    <label for="colorInput">Give me a color:</label>
+    <input type="color" id="colorInput">
+    <br>
+    <br>
+    <label for="animalInput">Give me an animal:</label>
+    <input type="text" id="animalInput">
+    <br>
+    <br>
+    <label for="placeInput">Give me a place:</label>
+    <input type="text" id="placeInput">
+    <br>
+    <br>
+    <label for="place2Input">Give me a second place:</label>
+    <input type="text" id="place2Input">
+    <br>
+    <br>
+    <label for="itemInput">Give me an item holder:</label>
+    <input type="text" id="itemInput">
+    <br>
+    <br>
+    <label for="liquidInput">Give me a liquid:</label>
+    <input type="text" id="liquidInput">
+    <br>
+    <br>
+    <button onclick="submit()">Submit</button>
+
+    <h4 id="madlib">Mad-Lib</h4>
+
+<script>
+    function submit() {
+        let name = document.getElementById("nameInput").value;
+        let color = document.getElementById("colorInput").value;
+        let animal = document.getElementById("animalInput").value;
+        let place = document.getElementById("placeInput").value;
+        let place2 = document.getElementById("place2Input").value;
+        let item = document.getElementById("itemInput").value;
+        let liquid = document.getElementById("liquidInput").value;
+
+        document.body.style.backgroundColor = color;
+        
+        let madlibText = "Once upon a time, " + name + " went to " + place + " with their " + animal + " and found a " + item + " full of " + liquid + " in " + place2 + ".";
+        document.getElementById("madlib").textContent = madlibText;
+    }
+</script>
+
+</body>
+</html>
+
